@@ -15,8 +15,7 @@ checkout:
 
 dependencies:
   override:
-    - cd rpicc
-    - ./build.sh
+    - cd rpicc && ./build.sh
     - docker run --rm $RPXC_IMAGE > $RPXC_SCRIPT
     - chmod +x $RPXC_SCRIPT
 
