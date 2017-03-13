@@ -21,4 +21,5 @@ dependencies:
 
 test:
   override:
-    - make debian
+    - rpxc sh -c 'CFLAGS=--sysroot=$SYSROOT ./configure --host=$HOST'
+    - rpxc dpkg-build
