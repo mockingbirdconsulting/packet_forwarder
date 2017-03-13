@@ -6,8 +6,16 @@ machine:
   services:
     - docker
 
+## Customize checkout
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init # use submodules
+
+
 dependencies:
   override:
+    - cd rpicc
     - ./build.sh
     - docker run --rm $RPXC_IMAGE > $RPXC_SCRIPT
     - chmod +x $RPXC_SCRIPT

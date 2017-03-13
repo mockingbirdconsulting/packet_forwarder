@@ -1,0 +1,3 @@
+[submodule "rpicc"]
+	path = rpicc
+	url = https://github.com/sdt/docker-raspberry-pi-cross-compiler.git
