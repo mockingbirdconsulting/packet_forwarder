@@ -1,0 +1,11 @@
+Source: ttn-gateway
+Maintainer: Matthew Macdonald-Wallace <matt@mockingbirdconsulting.co.uk>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9), wiringpi
+
+Package: ttn-gateway
+Architecture: all
+Depends: wiringpi, ${shlibs:Depends}, ${misc:Depends}
+Description: The software to power The Things Network Gateways
